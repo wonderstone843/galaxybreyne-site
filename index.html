@@ -11,6 +11,9 @@
 </head>
 <body>
 
+<!-- Scroll progress bar -->
+<div class="scroll-progress"></div>
+
 <!-- ═══════════ NAV ═══════════ -->
 <nav class="nav">
     <div class="nav-inner">
@@ -29,15 +32,23 @@
 
 <!-- ═══════════ HERO ═══════════ -->
 <section class="hero">
-    <!-- GalaxyBreyne floating city — hero background -->
-    <img class="hero-world" src="images/hero-galaxybreyne-city.jpg" alt="GalaxyBreyne floating city">
+    <!-- GalaxyBreyne floating city — hero background (parallax wrapper) -->
+    <div class="hero-parallax">
+        <img class="hero-world" src="images/hero-galaxybreyne-city.jpg" alt="GalaxyBreyne floating city">
+    </div>
+
+    <!-- Cursor-tracking prism light -->
+    <div class="hero-cursor-light"></div>
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
         <span class="hero-kicker">// GALAXYBREYNE PRESENTS</span>
-        <h1 class="hero-headline">Innovation<br><span class="hero-headline-accent">&amp; Design</span></h1>
-        <p class="hero-sub">AI-powered intelligence briefings, cinematic creative pipelines, and production-grade automation — built by an Oracle Certified Generative AI Foundations Professional.</p>
+        <h1 class="hero-headline">
+            <span class="reveal-line"><span class="reveal-letter">I</span><span class="reveal-letter">n</span><span class="reveal-letter">n</span><span class="reveal-letter">o</span><span class="reveal-letter">v</span><span class="reveal-letter">a</span><span class="reveal-letter">t</span><span class="reveal-letter">i</span><span class="reveal-letter">o</span><span class="reveal-letter">n</span></span><br>
+            <span class="hero-headline-accent reveal-line"><span class="reveal-letter">&amp;</span><span class="reveal-letter">&nbsp;</span><span class="reveal-letter">D</span><span class="reveal-letter">e</span><span class="reveal-letter">s</span><span class="reveal-letter">i</span><span class="reveal-letter">g</span><span class="reveal-letter">n</span></span>
+        </h1>
+        <p class="hero-sub">AI-powered intelligence briefings, cinematic creative pipelines, and production-grade automation — built by an <strong>Oracle Certified Generative AI Professional</strong>.</p>
         <div class="hero-cta">
             <a href="#services" class="btn btn-primary">See Services</a>
             <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
@@ -105,18 +116,28 @@
     </div>
 </section>
 
+<!-- Prism beam separator -->
+<div class="prism-beam"></div>
+
 <!-- ═══════════ ABOUT ═══════════ -->
 <section class="about" id="about">
+    <!-- Animated starfield -->
+    <div class="starfield" aria-hidden="true"></div>
+
     <div class="about-inner">
         <div class="about-text">
             <span class="section-kicker">// ABOUT</span>
             <h2>From the Road to the Cutting Edge</h2>
-            <p>I spent nine years behind the wheel of an 18-wheeler before an accident forced me to rebuild everything. That rebuild turned into an obsession with AI — and today I'm an <strong>Oracle Certified Generative AI Foundations Professional</strong> running production pipelines that rival entire studios.</p>
+            <p>I spent nine years behind the wheel of an 18-wheeler before an accident forced me to rebuild everything. That rebuild turned into an obsession with AI — and today I hold <strong>two Oracle certifications in the Generative AI track</strong> and run production pipelines that rival entire studios.</p>
             <p>GalaxyBreyne is where that expertise meets your business. Whether you need a daily intelligence briefing, a custom AI video pipeline, or a full creative production system, every project gets the same relentless attention I put into my own work.</p>
             <div class="about-badges">
                 <div class="badge">
-                    <strong>Oracle Certified</strong>
-                    <span>Generative AI Foundations Professional</span>
+                    <strong>Oracle Certified Foundations Associate</strong>
+                    <span>OCI 2025 AI Foundations Associate · Sept 2025</span>
+                </div>
+                <div class="badge">
+                    <strong>Oracle Certified Professional</strong>
+                    <span>OCI 2025 Generative AI Professional · Oct 2025</span>
                 </div>
                 <div class="badge">
                     <strong>Production Pipelines</strong>
@@ -131,16 +152,12 @@
     </div>
 </section>
 
+<!-- Prism beam separator -->
+<div class="prism-beam"></div>
+
 <!-- ═══════════ PORTFOLIO ═══════════ -->
 <section class="portfolio section-with-world" id="portfolio">
-    <!-- TODO: Replace this iframe src with the PORTFOLIO WORLD once generated (epic aerial dusk) -->
-    <iframe
-        class="section-world-bg"
-        loading="lazy"
-        src="https://marble.worldlabs.ai/viewer.html?splatUrl=https%3A%2F%2Fcdn.marble.worldlabs.ai%2F874833ad-612d-447e-85e6-ee65ae6236a2%2F67ab4377-400b-49ec-8886-080ab7b3920a_ceramic.spz&mobileUrl=https%3A%2F%2Fcdn.marble.worldlabs.ai%2F874833ad-612d-447e-85e6-ee65ae6236a2%2F00380098-d5d9-4f3b-ac9d-09985a82e047_ceramic_500k.spz&marbleWorldId=874833ad-612d-447e-85e6-ee65ae6236a2"
-        frameborder="0"
-        allow="autoplay; fullscreen; xr-spatial-tracking">
-    </iframe>
+    <img class="section-world-bg" src="images/services-bg-dome.jpg" alt="" loading="lazy">
     <div class="section-world-overlay"></div>
 
     <div class="section-head">

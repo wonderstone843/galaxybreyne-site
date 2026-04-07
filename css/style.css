@@ -656,6 +656,270 @@ section {
     font-size: 13px;
 }
 
+/* ═══════════════════════════════════════════════
+   ALIVE — Animations, interactions, polish
+   ═══════════════════════════════════════════════ */
+
+/* ─── Scroll progress bar ─── */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--grad-prism);
+    z-index: 200;
+    box-shadow: 0 0 12px rgba(178, 102, 255, 0.6);
+    transition: width 0.05s linear;
+}
+
+/* ─── Animated brand text gradient (#5) ─── */
+.brand-text {
+    background: linear-gradient(120deg,
+        var(--prism-cyan) 0%,
+        var(--prism-violet) 25%,
+        var(--prism-magenta) 50%,
+        var(--prism-gold) 75%,
+        var(--prism-cyan) 100%);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: prismShift 8s linear infinite;
+}
+@keyframes prismShift {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+}
+
+/* ─── Hero parallax wrapper (#3) ─── */
+.hero-parallax {
+    position: absolute;
+    inset: -3%;
+    z-index: 0;
+    will-change: transform;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-parallax .hero-world {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ─── Cursor-tracking prism light (#1) ─── */
+.hero-cursor-light {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 500px at var(--mx, 50%) var(--my, 50%),
+        rgba(178, 102, 255, 0.25),
+        rgba(0, 229, 255, 0.12) 30%,
+        transparent 60%
+    );
+    mix-blend-mode: screen;
+    transition: background 0.2s;
+}
+
+/* ─── Letter-by-letter reveal (#2) ─── */
+.reveal-line { display: inline-block; }
+.reveal-letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px) rotateX(-90deg);
+    animation: letterIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes letterIn {
+    to { opacity: 1; transform: translateY(0) rotateX(0deg); }
+}
+/* Stagger via nth-child */
+.reveal-letter:nth-child(1)  { animation-delay: 0.10s; }
+.reveal-letter:nth-child(2)  { animation-delay: 0.16s; }
+.reveal-letter:nth-child(3)  { animation-delay: 0.22s; }
+.reveal-letter:nth-child(4)  { animation-delay: 0.28s; }
+.reveal-letter:nth-child(5)  { animation-delay: 0.34s; }
+.reveal-letter:nth-child(6)  { animation-delay: 0.40s; }
+.reveal-letter:nth-child(7)  { animation-delay: 0.46s; }
+.reveal-letter:nth-child(8)  { animation-delay: 0.52s; }
+.reveal-letter:nth-child(9)  { animation-delay: 0.58s; }
+.reveal-letter:nth-child(10) { animation-delay: 0.64s; }
+
+/* Override the old fadeUp on hero-content so letter reveal is the star */
+.hero-content { animation: none; }
+
+/* ─── Scroll-triggered reveals (#4) ─── */
+.service-card,
+.portfolio-card,
+.badge {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s,
+                border-color 0.4s;
+}
+.service-card.visible,
+.portfolio-card.visible,
+.badge.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Stagger children inside grids */
+.services-grid .service-card.visible:nth-child(1) { transition-delay: 0.00s; }
+.services-grid .service-card.visible:nth-child(2) { transition-delay: 0.08s; }
+.services-grid .service-card.visible:nth-child(3) { transition-delay: 0.16s; }
+.services-grid .service-card.visible:nth-child(4) { transition-delay: 0.24s; }
+.services-grid .service-card.visible:nth-child(5) { transition-delay: 0.32s; }
+.services-grid .service-card.visible:nth-child(6) { transition-delay: 0.40s; }
+.portfolio-grid .portfolio-card.visible:nth-child(1) { transition-delay: 0.00s; }
+.portfolio-grid .portfolio-card.visible:nth-child(2) { transition-delay: 0.08s; }
+.portfolio-grid .portfolio-card.visible:nth-child(3) { transition-delay: 0.16s; }
+.portfolio-grid .portfolio-card.visible:nth-child(4) { transition-delay: 0.24s; }
+.portfolio-grid .portfolio-card.visible:nth-child(5) { transition-delay: 0.32s; }
+.portfolio-grid .portfolio-card.visible:nth-child(6) { transition-delay: 0.40s; }
+.portfolio-grid .portfolio-card.visible:nth-child(7) { transition-delay: 0.48s; }
+
+/* ─── Service card amplified glow (#6) ─── */
+.service-card:hover {
+    transform: translateY(-10px) scale(1.01);
+    border-color: var(--prism-violet);
+    box-shadow:
+        0 24px 60px rgba(178, 102, 255, 0.25),
+        0 0 80px rgba(0, 229, 255, 0.15),
+        0 0 0 1px rgba(178, 102, 255, 0.4) inset;
+}
+
+/* ─── Portfolio cards: amplify the lift (#7) ─── */
+.portfolio-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: var(--prism-cyan);
+    box-shadow: 0 24px 60px rgba(0, 229, 255, 0.25);
+}
+.portfolio-thumb-video img {
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.4s;
+    filter: brightness(0.85) saturate(1.1);
+}
+.portfolio-thumb-video:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.05) saturate(1.3);
+}
+.portfolio-thumb-video .play-icon {
+    font-size: 56px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                background 0.3s,
+                text-shadow 0.3s;
+}
+.portfolio-thumb-video:hover .play-icon {
+    transform: scale(1.15);
+    text-shadow: 0 0 30px rgba(0, 229, 255, 0.9), 0 4px 24px rgba(0,0,0,0.8);
+}
+
+/* ─── Animated starfield in About (#8) ─── */
+.about { overflow: hidden; }
+.starfield {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(1px 1px at 12% 18%, #fff, transparent),
+        radial-gradient(1px 1px at 28% 62%, #fff, transparent),
+        radial-gradient(1px 1px at 47% 28%, rgba(255,255,255,0.85), transparent),
+        radial-gradient(1px 1px at 63% 78%, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 78% 12%, rgba(0,229,255,0.9), transparent),
+        radial-gradient(1px 1px at 88% 48%, #fff, transparent),
+        radial-gradient(1px 1px at 8% 88%, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 35% 8%, rgba(178,102,255,0.85), transparent),
+        radial-gradient(1px 1px at 55% 92%, #fff, transparent),
+        radial-gradient(1px 1px at 72% 35%, #fff, transparent),
+        radial-gradient(1px 1px at 18% 45%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1.5px 1.5px at 92% 72%, rgba(255,179,71,0.85), transparent);
+    background-size: 100% 100%;
+    animation: starDrift 60s linear infinite, starTwinkle 4s ease-in-out infinite;
+    opacity: 0.7;
+}
+@keyframes starDrift {
+    0%   { background-position: 0 0; }
+    100% { background-position: -100px -50px; }
+}
+@keyframes starTwinkle {
+    0%, 100% { opacity: 0.5; }
+    50%      { opacity: 0.9; }
+}
+.about-inner { position: relative; z-index: 1; }
+
+/* ─── Magnetic CTA buttons (#9) ─── */
+.btn {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s,
+                background 0.3s,
+                border-color 0.3s;
+    will-change: transform;
+}
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 12px 50px rgba(0, 229, 255, 0.6),
+                0 0 80px rgba(178, 102, 255, 0.4);
+}
+.btn-ghost:hover {
+    transform: translateY(-3px) scale(1.03);
+    border-color: var(--prism-cyan);
+    box-shadow: 0 12px 30px rgba(0, 229, 255, 0.3);
+}
+
+/* ─── Prism beam section dividers (#10) ─── */
+.prism-beam {
+    position: relative;
+    height: 2px;
+    background: transparent;
+    overflow: hidden;
+    z-index: 5;
+}
+.prism-beam::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        var(--prism-cyan),
+        var(--prism-violet),
+        var(--prism-magenta),
+        transparent);
+    box-shadow: 0 0 24px rgba(178, 102, 255, 0.7),
+                0 0 48px rgba(0, 229, 255, 0.4);
+    animation: beamSweep 6s ease-in-out infinite;
+}
+@keyframes beamSweep {
+    0%   { left: -60%; }
+    50%  { left: 100%; }
+    100% { left: 100%; }
+}
+
+/* ─── Honor reduced motion ─── */
+@media (prefers-reduced-motion: reduce) {
+    .reveal-letter,
+    .service-card,
+    .portfolio-card,
+    .badge,
+    .hero-parallax,
+    .brand-text,
+    .starfield,
+    .prism-beam::before {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
 /* ═══════════ RESPONSIVE ═══════════ */
 @media (max-width: 768px) {
     .nav { padding: 16px 20px; }
@@ -667,4 +931,5 @@ section {
     .hero { padding: 0 24px 60px; }
     .hero-headline { font-size: 48px; }
     .about-badges { grid-template-columns: 1fr; }
+    .hero-cursor-light { display: none; } /* no cursor on mobile */
 }
