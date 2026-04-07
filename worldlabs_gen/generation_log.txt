@@ -1,0 +1,58 @@
+════════════════════════════════════════════════════════════
+  GALAXYBREYNE — World Labs 1.1 Plus Generation
+  Model: marble-1.1-plus
+  Output: /Users/Wpenn/galaxybreyne-site/worldlabs_gen/output
+════════════════════════════════════════════════════════════
+
+━━ HERO — Helix Tower at night under geodesic dome ━━
+
+[galaxybreyne_hero_helix_tower_night]
+  Source: district_building_01_helix.png
+  Preparing upload...
+  Uploading image...
+  Starting generation with model=marble-1.1-plus...
+  Operation started: c1afbc6a-c507-4303-9485-c131e6663ea9
+  ... still generating (30s elapsed)
+  ... still generating (61s elapsed)
+  ... still generating (91s elapsed)
+  ... still generating (122s elapsed)
+  ... still generating (153s elapsed)
+  ... still generating (183s elapsed)
+  ... still generating (214s elapsed)
+  ... still generating (245s elapsed)
+  ... still generating (275s elapsed)
+  ... still generating (306s elapsed)
+  ✓ Complete in 337s
+  World ID: e7524e4a-69f2-4ba7-b467-98af03350c1f
+  Saved: galaxybreyne_hero_helix_tower_night.json
+
+━━ SERVICES SECTION — Supertree sunset with waterfall pool ━━
+
+[galaxybreyne_services_supertree_sunset]
+  Source: district_building_05_bridge.png
+  Preparing upload...
+  Uploading image...
+  Starting generation with model=marble-1.1-plus...
+  ✗ FAILED: 402 Client Error: Payment Required for url: https://api.worldlabs.ai/marble/v1/worlds:generate
+
+━━ PORTFOLIO SECTION — Terraced eco-building daytime ━━
+
+[galaxybreyne_portfolio_terraces_day]
+  Source: district_building_06_terraces.png
+  Preparing upload...
+  Uploading image...
+  Starting generation with model=marble-1.1-plus...
+  ✗ FAILED: 402 Client Error: Payment Required for url: https://api.worldlabs.ai/marble/v1/worlds:generate
+
+════════════════════════════════════════════════════════════
+  GENERATION SUMMARY
+════════════════════════════════════════════════════════════
+  ✓ HERO — Helix Tower at night under geodesic dome
+      world_id: e7524e4a-69f2-4ba7-b467-98af03350c1f
+  ✗ SERVICES SECTION — Supertree sunset with waterfall pool
+      error:    402 Client Error: Payment Required for url: https://api.worldlabs.ai/marble/v1/worlds:generate
+  ✗ PORTFOLIO SECTION — Terraced eco-building daytime
+      error:    402 Client Error: Payment Required for url: https://api.worldlabs.ai/marble/v1/worlds:generate
+
+  Summary saved: /Users/Wpenn/galaxybreyne-site/worldlabs_gen/output/_SUMMARY.json
+

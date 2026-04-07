@@ -1,0 +1,31 @@
+════════════════════════════════════════════════════════════
+  GALAXYBREYNE — World Labs 1.1 Plus Generation
+  Model: marble-1.1-plus
+  Output: /Users/Wpenn/galaxybreyne-site/worldlabs_gen/output
+════════════════════════════════════════════════════════════
+
+━━ HERO — Massive aerial dome city at golden hour ━━
+
+[galaxybreyne_hero_aerial_massive_dome]
+  Source: ext_04_aerial_massive.png
+  Preparing upload...
+  Uploading image...
+  Starting generation with model=marble-1.1-plus...
+  ✗ FAILED: 402 Client Error: Payment Required for url: https://api.worldlabs.ai/marble/v1/worlds:generate
+
+  ⚠ 402 Payment Required detected — halting remaining generations
+
+⊘ Skipping SERVICES SECTION — Moonlit aerial dome stylized — halted on previous 402 Payment Required
+
+⊘ Skipping PORTFOLIO SECTION — Driving approach to the dome at night — halted on previous 402 Payment Required
+
+════════════════════════════════════════════════════════════
+  GENERATION SUMMARY
+════════════════════════════════════════════════════════════
+  ✗ HERO — Massive aerial dome city at golden hour
+      error:    402 Client Error: Payment Required for url: https://api.worldlabs.ai/marble/v1/worlds:generate
+  ✗ SERVICES SECTION — Moonlit aerial dome stylized
+  ✗ PORTFOLIO SECTION — Driving approach to the dome at night
+
+  Summary saved: /Users/Wpenn/galaxybreyne-site/worldlabs_gen/output/_SUMMARY.json
+
