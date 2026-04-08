@@ -3,11 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GalaxyBreyne — AI-powered intelligence briefings, creative pipelines, and innovation design.">
-    <title>GalaxyBreyne — Innovation & Design</title>
+    <meta name="description" content="GalaxyBreyne — AI-powered intelligence briefings, creative pipelines, and production-grade automation. Built by an Oracle Certified Generative AI Professional.">
+    <title>GalaxyBreyne — AI Intelligence Briefings & Creative Pipelines</title>
+    <link rel="canonical" href="https://www.galaxybreyne.com/">
+    <meta name="author" content="Joshua — GalaxyBreyne">
     <link rel="icon" type="image/png" href="images/logo-galaxybreyne.png">
+
+    <!-- Performance: preload hero, preconnect to Google Fonts -->
+    <link rel="preload" as="image" href="images/hero-galaxybreyne-city.jpg" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.galaxybreyne.com/">
+    <meta property="og:title" content="GalaxyBreyne — AI Intelligence Briefings & Creative Pipelines">
+    <meta property="og:description" content="AI-powered intelligence briefings, cinematic creative pipelines, and production-grade automation. Built by an Oracle Certified Generative AI Professional.">
+    <meta property="og:image" content="https://www.galaxybreyne.com/images/hero-galaxybreyne-city.jpg">
+    <meta property="og:site_name" content="GalaxyBreyne">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GalaxyBreyne — AI Intelligence Briefings & Creative Pipelines">
+    <meta name="twitter:description" content="AI-powered intelligence briefings, cinematic creative pipelines, and production-grade automation.">
+    <meta name="twitter:image" content="https://www.galaxybreyne.com/images/hero-galaxybreyne-city.jpg">
+
+    <!-- JSON-LD: Organization, WebSite, Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.galaxybreyne.com/#organization",
+          "name": "GalaxyBreyne",
+          "url": "https://www.galaxybreyne.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.galaxybreyne.com/images/logo-galaxybreyne.png"
+          },
+          "description": "AI-powered intelligence briefings, cinematic creative pipelines, and production-grade automation.",
+          "email": "coolp@galaxybreyne.com",
+          "founder": { "@id": "https://www.galaxybreyne.com/#person" },
+          "sameAs": ["https://www.youtube.com/@GalaxyBreyne"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.galaxybreyne.com/#website",
+          "url": "https://www.galaxybreyne.com",
+          "name": "GalaxyBreyne",
+          "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.galaxybreyne.com/#person",
+          "name": "Joshua",
+          "jobTitle": "AI Pipeline Engineer & Founder",
+          "worksFor": { "@id": "https://www.galaxybreyne.com/#organization" },
+          "url": "https://www.galaxybreyne.com",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Oracle Cloud Infrastructure 2025 AI Foundations Associate",
+              "credentialCategory": "certification",
+              "recognizedBy": { "@type": "Organization", "name": "Oracle" },
+              "dateCreated": "2025-09"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Oracle Cloud Infrastructure 2025 Generative AI Professional",
+              "credentialCategory": "certification",
+              "recognizedBy": { "@type": "Organization", "name": "Oracle" },
+              "dateCreated": "2025-10"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "GalaxyBreyne Services",
+      "itemListElement": [
+        {
+          "@type": "ListItem", "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "Dental Practice Intel",
+            "description": "Reputation tracking, competitor watch, lead alerts, and content ideas delivered daily to your inbox.",
+            "provider": { "@id": "https://www.galaxybreyne.com/#organization" },
+            "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "497" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "E-Commerce Intel",
+            "description": "Price changes, Buy Box alerts, TikTok/Reddit brand mentions, AI Overview citation tracking, and competitor ad spend.",
+            "provider": { "@id": "https://www.galaxybreyne.com/#organization" },
+            "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "797" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "Home Services Intel",
+            "description": "HVAC, roofing, plumbing — reviews, seasonal demand signals, lead alerts, competitor pricing.",
+            "provider": { "@id": "https://www.galaxybreyne.com/#organization" },
+            "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "500" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 4,
+          "item": {
+            "@type": "Service",
+            "name": "Med Spa & Aesthetics Intel",
+            "description": "Treatment trends, reputation scorecards, competitor watch, lead alerts for high-ticket services.",
+            "provider": { "@id": "https://www.galaxybreyne.com/#organization" },
+            "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "500" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 5,
+          "item": {
+            "@type": "Service",
+            "name": "Creative Pipelines",
+            "description": "Custom AI video production, voiceovers, character generation, and full YouTube content pipelines.",
+            "provider": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: Portfolio VideoObjects -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "GalaxyBreyne Portfolio",
+      "itemListElement": [
+        {
+          "@type": "ListItem", "position": 1,
+          "item": {
+            "@type": "VideoObject",
+            "name": "Life of the Unicorn Gundam",
+            "description": "Mobile suit documentary built on the Gundam Agent Pipeline — AI visuals, ElevenLabs voiceovers, Grok animations.",
+            "thumbnailUrl": "https://img.youtube.com/vi/ogtWiW5QZHQ/maxresdefault.jpg",
+            "contentUrl": "https://www.youtube.com/watch?v=ogtWiW5QZHQ",
+            "embedUrl": "https://www.youtube.com/embed/ogtWiW5QZHQ",
+            "uploadDate": "2025-10-01",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 2,
+          "item": {
+            "@type": "VideoObject",
+            "name": "Life of the ZZ Gundam",
+            "description": "Full POV documentary on the ZZ Gundam — built on the Gundam agent pipeline.",
+            "thumbnailUrl": "https://img.youtube.com/vi/y6mRDgOJ5aw/maxresdefault.jpg",
+            "contentUrl": "https://www.youtube.com/watch?v=y6mRDgOJ5aw",
+            "embedUrl": "https://www.youtube.com/embed/y6mRDgOJ5aw",
+            "uploadDate": "2025-11-01",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 3,
+          "item": {
+            "@type": "VideoObject",
+            "name": "A Conversation with the Zeta Gundam",
+            "description": "War, pilots, and the weight of choice — a Claude-powered Zeta persona interview with custom ElevenLabs voices.",
+            "thumbnailUrl": "https://img.youtube.com/vi/EeyrPtP8m-o/maxresdefault.jpg",
+            "contentUrl": "https://www.youtube.com/watch?v=EeyrPtP8m-o",
+            "embedUrl": "https://www.youtube.com/embed/EeyrPtP8m-o",
+            "uploadDate": "2026-02-15",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 4,
+          "item": {
+            "@type": "VideoObject",
+            "name": "DOOM — The God & The Godfather",
+            "description": "High-octane DOOM cinematic built on the AI creative pipeline.",
+            "thumbnailUrl": "https://img.youtube.com/vi/fe3AOupLhpI/maxresdefault.jpg",
+            "contentUrl": "https://www.youtube.com/watch?v=fe3AOupLhpI",
+            "embedUrl": "https://www.youtube.com/embed/fe3AOupLhpI",
+            "uploadDate": "2025-12-01",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 5,
+          "item": {
+            "@type": "VideoObject",
+            "name": "Pokémon on Namek — Part 1",
+            "description": "Crossover universe series — Pokémon trainers fighting on Planet Namek.",
+            "thumbnailUrl": "https://img.youtube.com/vi/7JnxsK8H77U/maxresdefault.jpg",
+            "contentUrl": "https://www.youtube.com/watch?v=7JnxsK8H77U",
+            "embedUrl": "https://www.youtube.com/embed/7JnxsK8H77U",
+            "uploadDate": "2025-09-01",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 6,
+          "item": {
+            "@type": "VideoObject",
+            "name": "Pokémon on Namek — Part 2",
+            "description": "The saga continues — escalating battles across Namek's alien landscape.",
+            "thumbnailUrl": "https://img.youtube.com/vi/Q3yEI943KgU/maxresdefault.jpg",
+            "contentUrl": "https://www.youtube.com/watch?v=Q3yEI943KgU",
+            "embedUrl": "https://www.youtube.com/embed/Q3yEI943KgU",
+            "uploadDate": "2025-10-15",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        },
+        {
+          "@type": "ListItem", "position": 7,
+          "item": {
+            "@type": "VideoObject",
+            "name": "Unicorn Gundam — Short Vol. 1",
+            "description": "Bite-size Unicorn Gundam cinematic short.",
+            "thumbnailUrl": "https://img.youtube.com/vi/NVcZRlkORPE/maxresdefault.jpg",
+            "contentUrl": "https://youtube.com/shorts/NVcZRlkORPE",
+            "embedUrl": "https://www.youtube.com/embed/NVcZRlkORPE",
+            "uploadDate": "2025-11-15",
+            "publisher": { "@id": "https://www.galaxybreyne.com/#organization" }
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -34,7 +269,8 @@
 <section class="hero">
     <!-- GalaxyBreyne floating city — hero background (parallax wrapper) -->
     <div class="hero-parallax">
-        <img class="hero-world" src="images/hero-galaxybreyne-city.jpg" alt="GalaxyBreyne floating city">
+        <img class="hero-world" src="images/hero-galaxybreyne-city.jpg" alt="GalaxyBreyne floating city" width="1920" height="1080" fetchpriority="high">
+        <canvas id="hero-three" class="hero-three" aria-hidden="true"></canvas>
     </div>
 
     <!-- Cursor-tracking prism light -->
@@ -45,8 +281,9 @@
     <div class="hero-content">
         <span class="hero-kicker">// GALAXYBREYNE PRESENTS</span>
         <h1 class="hero-headline">
-            <span class="reveal-line"><span class="reveal-letter">I</span><span class="reveal-letter">n</span><span class="reveal-letter">n</span><span class="reveal-letter">o</span><span class="reveal-letter">v</span><span class="reveal-letter">a</span><span class="reveal-letter">t</span><span class="reveal-letter">i</span><span class="reveal-letter">o</span><span class="reveal-letter">n</span></span><br>
-            <span class="hero-headline-accent reveal-line"><span class="reveal-letter">&amp;</span><span class="reveal-letter">&nbsp;</span><span class="reveal-letter">D</span><span class="reveal-letter">e</span><span class="reveal-letter">s</span><span class="reveal-letter">i</span><span class="reveal-letter">g</span><span class="reveal-letter">n</span></span>
+            <span class="reveal-line"><span class="reveal-letter">I</span><span class="reveal-letter">n</span><span class="reveal-letter">t</span><span class="reveal-letter">e</span><span class="reveal-letter">l</span><span class="reveal-letter">l</span><span class="reveal-letter">i</span><span class="reveal-letter">g</span><span class="reveal-letter">e</span><span class="reveal-letter">n</span><span class="reveal-letter">c</span><span class="reveal-letter">e</span><span class="reveal-letter">.</span></span><br>
+            <span class="reveal-line"><span class="reveal-letter">C</span><span class="reveal-letter">i</span><span class="reveal-letter">n</span><span class="reveal-letter">e</span><span class="reveal-letter">m</span><span class="reveal-letter">a</span><span class="reveal-letter">t</span><span class="reveal-letter">i</span><span class="reveal-letter">c</span><span class="reveal-letter">.</span></span><br>
+            <span class="hero-headline-accent reveal-line"><span class="reveal-letter">A</span><span class="reveal-letter">u</span><span class="reveal-letter">t</span><span class="reveal-letter">o</span><span class="reveal-letter">m</span><span class="reveal-letter">a</span><span class="reveal-letter">t</span><span class="reveal-letter">e</span><span class="reveal-letter">d</span><span class="reveal-letter">.</span></span>
         </h1>
         <p class="hero-sub">AI-powered intelligence briefings, cinematic creative pipelines, and production-grade automation — built by an <strong>Oracle Certified Generative AI Professional</strong>.</p>
         <div class="hero-cta">
@@ -98,13 +335,6 @@
             <h3>Med Spa &amp; Aesthetics</h3>
             <p>Treatment trends, reputation scorecards, competitor watch, lead alerts for high-ticket services.</p>
             <div class="service-price">from $500<span>/mo</span></div>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">🌿</div>
-            <h3>Cannabis Industry Intel</h3>
-            <p>Regulatory updates, border competition, Leafly/Weedmaps signals, and dispensary reputation tracking.</p>
-            <div class="service-price">contact</div>
         </div>
 
         <div class="service-card service-card-featured">
@@ -241,10 +471,19 @@
 <footer class="footer">
     <div class="footer-inner">
         <img src="images/logo-galaxybreyne.png" alt="GalaxyBreyne" class="footer-logo">
-        <p>&copy; 2026 GalaxyBreyne Innovation &amp; Design. All rights reserved.</p>
+        <p>&copy; 2026 GalaxyBreyne. Intelligence. Cinematic. Automated.</p>
     </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="js/hero-three.js"></script>
 </body>
 </html>

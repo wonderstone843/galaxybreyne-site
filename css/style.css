@@ -177,7 +177,7 @@ img { max-width: 100%; display: block; }
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 680px;
+    max-width: 560px;
     animation: fadeUp 1.2s ease-out;
 }
 
@@ -205,15 +205,25 @@ img { max-width: 100%; display: block; }
 
 .hero-headline {
     font-family: var(--font-display);
-    font-size: clamp(48px, 7vw, 92px);
+    font-size: clamp(34px, 4.6vw, 64px);
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.02;
     letter-spacing: -1px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     color: #fff;
-    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.85);
 }
 
+/* Gradient must be applied PER reveal-letter — parent-level background-clip
+   breaks when children have their own transforms/opacity (letterIn animation). */
+.hero-headline-accent .reveal-letter {
+    background: var(--grad-prism);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+/* Fallback for the parent if no reveal-letter children */
 .hero-headline-accent {
     background: var(--grad-prism);
     -webkit-background-clip: text;
@@ -708,6 +718,22 @@ section {
     height: 100%;
     object-fit: cover;
 }
+/* Three.js hero canvas — sits above fallback JPG */
+.hero-three {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.2s ease-out;
+}
+.hero-three.is-ready { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+    .hero-three { display: none; }
+}
 
 /* ─── Cursor-tracking prism light (#1) ─── */
 .hero-cursor-light {
@@ -747,6 +773,10 @@ section {
 .reveal-letter:nth-child(8)  { animation-delay: 0.52s; }
 .reveal-letter:nth-child(9)  { animation-delay: 0.58s; }
 .reveal-letter:nth-child(10) { animation-delay: 0.64s; }
+.reveal-letter:nth-child(11) { animation-delay: 0.70s; }
+.reveal-letter:nth-child(12) { animation-delay: 0.76s; }
+.reveal-letter:nth-child(13) { animation-delay: 0.82s; }
+.reveal-letter:nth-child(14) { animation-delay: 0.88s; }
 
 /* Override the old fadeUp on hero-content so letter reveal is the star */
 .hero-content { animation: none; }

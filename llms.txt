@@ -1,0 +1,32 @@
+# GalaxyBreyne
+
+> AI-powered intelligence briefings and production-grade creative pipelines, built by Joshua — an Oracle Certified Generative AI Professional. GalaxyBreyne delivers daily AI-curated intelligence briefings to businesses in dental, e-commerce, home services, med spa, and cannabis verticals, plus custom AI video production pipelines for YouTube creators and studios.
+
+## About
+
+GalaxyBreyne is an AI automation studio founded by Joshua, who holds two Oracle Cloud Infrastructure 2025 certifications in the Generative AI track (AI Foundations Associate, Sept 2025; Generative AI Professional, Oct 2025). After a 9-year trucking career ended in an accident, Joshua rebuilt around AI and now runs production pipelines that rival entire studios.
+
+## Services
+
+- [Dental Practice Intel](https://www.galaxybreyne.com/#services): Daily AI briefings for dental practices — reputation tracking, competitor watch, lead alerts, content ideas. From $497/month.
+- [E-Commerce Intel](https://www.galaxybreyne.com/#services): Price changes, Buy Box alerts, TikTok/Reddit brand mentions, AI Overview citation tracking, competitor ad spend. From $797/month.
+- [Home Services Intel](https://www.galaxybreyne.com/#services): HVAC, roofing, plumbing — reviews, seasonal demand signals, lead alerts, competitor pricing. From $500/month.
+- [Med Spa & Aesthetics Intel](https://www.galaxybreyne.com/#services): Treatment trends, reputation scorecards, competitor watch, lead alerts. From $500/month.
+- [Cannabis Industry Intel](https://www.galaxybreyne.com/#services): Regulatory updates, border competition, Leafly/Weedmaps signals, dispensary reputation. Contact for pricing.
+- [Creative Pipelines](https://www.galaxybreyne.com/#services): Custom AI video production, voiceovers, character generation, full YouTube content pipelines. Custom pricing.
+
+## Portfolio
+
+Production AI video pipelines built with Claude, ElevenLabs, Grok, Nano Banana Pro, and Sora 2:
+
+- [Life of the Unicorn Gundam](https://www.youtube.com/watch?v=ogtWiW5QZHQ)
+- [Life of the ZZ Gundam](https://www.youtube.com/watch?v=y6mRDgOJ5aw)
+- [A Conversation with the Zeta Gundam](https://www.youtube.com/watch?v=EeyrPtP8m-o)
+- [DOOM — The God & The Godfather](https://www.youtube.com/watch?v=fe3AOupLhpI)
+- [Pokémon on Namek Part 1](https://www.youtube.com/watch?v=7JnxsK8H77U)
+- [Pokémon on Namek Part 2](https://www.youtube.com/watch?v=Q3yEI943KgU)
+
+## Contact
+
+- Email: coolp@galaxybreyne.com
+- YouTube: https://www.youtube.com/@GalaxyBreyne
