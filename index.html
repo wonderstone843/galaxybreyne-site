@@ -269,8 +269,9 @@
 <section class="hero">
     <!-- GalaxyBreyne floating city — hero background (parallax wrapper) -->
     <div class="hero-parallax">
-        <img class="hero-world" src="images/hero-galaxybreyne-city.jpg" alt="GalaxyBreyne floating city" width="1920" height="1080" fetchpriority="high">
-        <canvas id="hero-three" class="hero-three" aria-hidden="true"></canvas>
+        <video class="hero-world" autoplay muted loop playsinline preload="auto" poster="images/hero-galaxybreyne-city.jpg" width="1920" height="1080" aria-hidden="true">
+            <source src="videos/hero.mp4" type="video/mp4">
+        </video>
     </div>
 
     <!-- Cursor-tracking prism light -->
@@ -299,7 +300,9 @@
 
 <!-- ═══════════ SERVICES ═══════════ -->
 <section class="services section-with-world" id="services">
-    <img class="section-world-bg" src="images/services-bg-dome.jpg" alt="Owl Noches dome city" loading="lazy">
+    <video class="section-world-bg" autoplay muted loop playsinline preload="metadata" poster="images/services-bg-dome.jpg" aria-hidden="true">
+        <source src="videos/services.mp4" type="video/mp4">
+    </video>
     <div class="section-world-overlay"></div>
 
     <div class="section-head">
@@ -350,8 +353,12 @@
 <div class="prism-beam"></div>
 
 <!-- ═══════════ ABOUT ═══════════ -->
-<section class="about" id="about">
-    <!-- Animated starfield -->
+<section class="about section-with-world" id="about">
+    <video class="section-world-bg" autoplay muted loop playsinline preload="metadata" poster="images/about-poster.jpg" aria-hidden="true">
+        <source src="videos/about.mp4" type="video/mp4">
+    </video>
+    <div class="section-world-overlay"></div>
+    <!-- Animated starfield over the video -->
     <div class="starfield" aria-hidden="true"></div>
 
     <div class="about-inner">
@@ -484,6 +491,5 @@
   }
 }
 </script>
-<script type="module" src="js/hero-three.js"></script>
 </body>
 </html>

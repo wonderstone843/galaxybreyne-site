@@ -881,7 +881,7 @@ section {
     0%, 100% { opacity: 0.5; }
     50%      { opacity: 0.9; }
 }
-.about-inner { position: relative; z-index: 1; }
+.about-inner { position: relative; z-index: 2; }
 
 /* ─── Magnetic CTA buttons (#9) ─── */
 .btn {
